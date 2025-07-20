@@ -40,12 +40,12 @@ class Player:
             self.sprite_frames['left'] = self.sprite_frames['right']  # Usamos flip para izquierda
         
         # Cargar sprite para movimiento hacia arriba
-        if 'back' in sprite_sheets:
-            self.sprite_frames['up'] = self.load_sprite_frames(sprite_sheets['back'])
+        if 'up' in sprite_sheets:
+            self.sprite_frames['up'] = self.load_sprite_frames(sprite_sheets['up'])
         
         # Cargar sprite para movimiento hacia abajo
-        if 'front' in sprite_sheets:
-            self.sprite_frames['down'] = self.load_sprite_frames(sprite_sheets['front'])
+        if 'down' in sprite_sheets:
+            self.sprite_frames['down'] = self.load_sprite_frames(sprite_sheets['down'])
         
         # Sprite por defecto
         self.current_direction = 'down'
